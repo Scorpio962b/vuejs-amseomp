@@ -4,7 +4,6 @@
     <h3>{{testimonial.name}}
     </h3>   
     <p>{{testimonial.desc}} </p>
- 
     </router-link>
 </template>
 <script>
@@ -15,10 +14,7 @@ export default {
 </script>
 
 <style scoped>
-  body{
-    height:60px;
-    width:60px
-  }
+ 
  
 
 </style>
