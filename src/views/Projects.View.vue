@@ -1,6 +1,6 @@
 <template>
     <div v-if="projects">
-        <div v-for="project in projects" :key="project.id" :project="tproject">
+        <div v-for="project in projects" :key="project.id" :project="project">
            <img :src="project.imageUrl" :alt="project.name">
             {{ project.name }}
            <a href="">
