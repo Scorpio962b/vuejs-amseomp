@@ -1,26 +1,22 @@
 <template>
     <div v-if="testimonials">
-        <div v-for="testimonial in testimonials" :key="testimonial.id" :testimonial="testimonial" >
-           <img :src="testimonial.image_url" :alt="testimonial.name">
-            {{ testimonial.name }}
-            {{ testimonial.desc }}
-        </div>
+       <TestCard :testimonials = "testimonials"/>
     </div>
     <div v-else>loading...testimonials not ready</div>
 </template>
 <script>
-import CardComp from '../components/Test-CardComp.vue'
+import TestCard from '../components/Test-CardComp.vue'
 export default {
     computed: {
         testimonials(){
             return this.$store.state.testimonials
-        }
+        },
     },
     mounted() {
         this.$store.dispatch('getTestimonials');
     },
 
-    components:{CardComp}
+    components:{TestCard}
 }
 </script>
 <style scoped>

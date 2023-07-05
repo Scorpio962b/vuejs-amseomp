@@ -2,11 +2,15 @@ import { createStore } from "vuex";
 export default createStore({
   state: {
     testimonials: null,
+    projects:null,
     Data: null,
   },
   mutations: {
     setTestimonial: (state, testimonials) => {
       state.testimonials = testimonials;
+    },
+    setProject: (state, projects) => {
+      state.projects = projects;
     },
     setData: (state, Data) => {
       state.Data = setData;
@@ -16,7 +20,13 @@ export default createStore({
     getTestimonials: async (context) => {
       fetch("https://scorpio962b.github.io/portfoliovue-json-file/data.json")
         .then((res) => res.json())
-        .then((testimonials) => context.commit("setTestimonial", testimonials.people));
+        .then((data) => context.commit("setTestimonial", data.testimonial));
+      
+    },
+    getProjects: async (context) => {
+      fetch("https://scorpio962b.github.io/portfoliovue-json-file/data.json")
+        .then((res) => res.json())
+        .then((data) => context.commit("setProject", data.project));
     },
     async fetchData(context) {
       try {

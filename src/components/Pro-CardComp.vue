@@ -1,22 +1,30 @@
 <template>
-    <router-link  :to="{name:'project'}">:
-    <img :src="project.imageUrl" :alt="project.name">
-    <h3>{{project.name}}
-    </h3>   
-    </router-link>
+    <div class="container">
+        <div class="card" v-for="project in projects" :key="project.id">
+            <div class="card-body">
+                <h2>{{ project.name }}</h2>
+                <img :src="project.imageUrl" :alt="project.name">
+            </div>
+        </div>
+    </div>
 </template>
 <script>
 
 export default {
-    props:["project"]
+    props:["projects"]
 }
 </script>
 
 <style scoped>
-  body{
-    height:60px;
-    width:60px
+  .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
- 
-
+  .card{
+    width: 18rem;
+  }
+  .card img{
+    width: 100%;
+  }
 </style>

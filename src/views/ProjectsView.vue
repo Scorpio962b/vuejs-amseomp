@@ -1,17 +1,11 @@
 <template>
     <div v-if="projects">
-        <div v-for="project in projects" :key="project.id" :project="project">
-           <img :src="project.imageUrl" :alt="project.name">
-            {{ project.name }}
-           <a href="">
-            <button @click="click">github</button>
-           </a>
-        </div>
+        <ProCard :projects = "projects"/>
     </div>
     <div v-else>loading...projects not ready</div>
 </template>
 <script>
-import ProCardComp from '../components/Pro-CardComp.vue'
+import ProCard from '../components/Pro-CardComp.vue'
 export default {
     computed: {
         projects(){
@@ -22,7 +16,7 @@ export default {
         this.$store.dispatch('getProjects');
     },
 
-    components:{ProCardComp}
+    components:{ProCard}
 }
 </script>
 <style scoped>

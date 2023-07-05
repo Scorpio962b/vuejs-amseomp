@@ -5,7 +5,7 @@
           <router-link class="active" to="/">Home</router-link> ||
           <router-link to="/about">About</router-link> ||
           <router-link to="/ContactMe">Contact me</router-link> ||
-          <router-link to="/Projects">Projects</router-link> ||
+          <router-link to="/Project">Projects</router-link> ||
           <router-link to="/testimonial">Testimonials</router-link> ||
           <router-link to="/resume">Resume</router-link>
       </div>
