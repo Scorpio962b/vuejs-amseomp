@@ -1,6 +1,6 @@
 <template>
     <div v-if="testimonials">
-        <div v-for="testimonial in testimonials" :key="testimonial.id" :testimonial="testimonial">
+        <div v-for="testimonial in testimonials" :key="testimonial.id" :testimonial="testimonial" >
            <img :src="testimonial.image_url" :alt="testimonial.name">
             {{ testimonial.name }}
             {{ testimonial.desc }}
