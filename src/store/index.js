@@ -6,7 +6,7 @@ export default createStore({
    
   },
   mutations: {
-    setPeople: (state, projects) => {
+    setProject: (state, projects) => {
       state.projects = project;
     },
   
@@ -16,7 +16,7 @@ export default createStore({
     getTestimonials: async(context)=> {
       fetch("https://scorpio962b.github.io/portfoliovue-json-file/data.json")
       .then((res) => res.json())
-      .then((project) => context.commit("setproject", project));
+      .then((project) => context.commit("setProject", project));
   },
   
   }
