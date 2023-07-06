@@ -20,9 +20,5 @@ export default {
 }
 </script>
 <style scoped>
- img{
-    width: 70px;
-    height: 70px;
-    border-radius:70px;
-  }
+ 
 </style>
