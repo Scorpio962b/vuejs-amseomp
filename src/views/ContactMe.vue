@@ -1,31 +1,17 @@
 <template>
-    <div>
-    <!-- modify this form HTML and place wherever you want your form -->
-    <form action="https://formspree.io/f/xqkonvwj" method="POST">
-        <div>
-          <label>  Your email:</label>
-        <input type="email" name="email" required placeholder="enter your email"/>
-        </div>
+  <div class="container">
+    <form action="https://formspree.io/f/xjvqvkbp" method="post">
+      <label name="Name">Name and surname:</label>
+      <input type="text"><br>
+      <label for="email">Email:</label>
+      <input type="text" name="email"><br>
+      <label for="email">Your number:</label>
+      <input type="text" name="cellphone"><br>
+      <label for="email">Message:</label>
+      <textarea name="message"></textarea>
 
-        <div>
-          <label>
-           <p> Your mobile number:</p>
-            <input type="text" name="cellphone" required />
-          </label>
-        </div>
-
-        <div>
-          <label>
-            <p>Your message:</p>
-            <textarea name="message"></textarea>
-          </label>
-        </div>
-      <!-- your other form fields go here -->
-  <div class="d-flex justify-content-center">
-    <button class="btn btn-dark" type="submit" >Send</button>
-  </div>
+      <button type="submit" name="submit">Submit</button>
     </form>
-  
   </div>
 </template>
 
@@ -36,4 +22,8 @@ export default {
 </script>
 
 <style>
+.container{
+  display: flex;
+  justify-content: center;
+}
 </style>

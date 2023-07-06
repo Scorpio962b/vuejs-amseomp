@@ -18,7 +18,9 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: white;
+  background: url(https://i.postimg.cc/G3fycbGS/chess.jpg)no-repeat center center/cover;
+  
 }
 
 nav {
@@ -33,4 +35,6 @@ nav a {
 nav a.router-link-exact-active {
   color: #42b983;
 }
+
+
 </style>

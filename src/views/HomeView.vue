@@ -4,7 +4,7 @@
       <img :src="'https://i.postimg.cc/4N6sJMBc/c12-abdoelmaaliek-samaai-1-720.jpg'" :alt="myphoto">
     </div>
     <div>
-      welcome to my portfolio. I am AbdoelMaaliek Samaai. 
+     <h2>Welcome to my portfolio. I am AbdoelMaaliek Samaai.</h2>  
     </div>
   </div>
 
@@ -21,3 +21,5 @@ export default {
   }
 }
 </script>
+<style>
+</style>

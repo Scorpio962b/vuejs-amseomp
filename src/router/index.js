@@ -13,7 +13,7 @@ const routes = [
     component: () => import('../views/AboutView.vue'),
   },
   {
-    path: '/contact',
+    path: '/ContactMe',
     name: 'Contact me',
     component: () => import('../views/ContactMe.vue'),
   },
@@ -26,6 +26,11 @@ const routes = [
     path: '/testimonial',
     name: 'Testimonial',
     component: () => import('../views/testimonial.vue')
+  },
+  {
+    path: '/resume',
+    name: 'Resume',
+    component: () => import('../views/resumeView.vue')
   }
  
 ]
