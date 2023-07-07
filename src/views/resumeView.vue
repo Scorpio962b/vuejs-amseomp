@@ -1,5 +1,5 @@
 <template>
-    
+   
     <div v-if="educations">
         <EduCard :educations = "educations"/>
     </div>
@@ -9,7 +9,7 @@
        <SkillCard :skills = "skills"/>
     </div>
     <div v-else>loading...skills not ready</div>
-
+    <a href="https://drive.google.com/file/d/1QwX6o7qMOaGuabsyvCr8uUEs_Fq-Qynk/view?usp=drive_link"><button>Read more</button></a>
 </template>
 <script>
 import SkillCard from '../components/skills.vue'

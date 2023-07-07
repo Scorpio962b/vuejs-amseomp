@@ -21,11 +21,57 @@ export default {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  
 }
 .card{
-  width: 18rem;
+  width: 22rem;
+  height: 770px;
+  margin-bottom:20px ;
 }
 .card img{
   width: 100%;
+  height: 50%;
+}
+@media(max-width:992px){
+  .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+  .card {
+  width: 20rem;
+  margin-bottom: 20px;
+}
+.card img {
+  width: 100%;
+}
+}
+@media(max-width:768px){
+  .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+  .card {
+  width: 16rem;
+  margin-bottom: 20px;
+}
+.card img {
+  width: 100%;
+}
+}
+@media(max-width:536px){
+  .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+  .card {
+  width: 14rem;
+  margin-bottom: 20px;
+}
+.card img {
+  width: 100%;
+}
 }
 </style>

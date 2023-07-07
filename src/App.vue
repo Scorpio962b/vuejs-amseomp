@@ -1,6 +1,6 @@
 <template>
   <NavBarComp/>
-  <router-view/>
+    <router-view/>
   <FooterComp/>
 </template>
 
@@ -19,22 +19,16 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: white;
-  background: url(https://i.postimg.cc/G3fycbGS/chess.jpg)no-repeat center center/cover;
-  
+  /* background: linear-gradient(to left, #007BB8 0% 50% , #ffc922 50% 100%); */
+  background: linear-gradient( #007BB8  , #ffc922);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
-nav {
-  padding: 30px;
-}
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
 
-nav a.router-link-exact-active {
-  color: #42b983;
-}
+
 
 
 </style>

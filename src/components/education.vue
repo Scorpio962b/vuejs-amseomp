@@ -1,11 +1,19 @@
 <template>
+  <h3>Education
+    :</h3>
     <div class="container">
-        <div class="card" v-for="education in educations" :key="education.id">
-            <div class="card-body">
-                <h2>{{ education.name }}</h2>
-                <p>{{ education.year }}</p>
-            </div>
+      <div class="row">
+        <div class="col" v-for="education in educations" :key="education.id">
+          <div class="card">
+              <div class="card-body">
+                  <h2>{{ education.name }}</h2>
+                  <p>{{ education.year }}</p>
+                  <p>{{ education.subjects }}</p>
+              </div>
+          </div>
+
         </div>
+      </div>
     </div>
 </template>
 
@@ -25,11 +33,11 @@ export default {
 </script>
 
 <style scoped>
-  .container{
+  /* .container{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-  }
+  } */
   .card{
     width: 18rem;
   }

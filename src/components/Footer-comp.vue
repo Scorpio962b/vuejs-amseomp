@@ -3,9 +3,9 @@
      <div>
          <p>Abdoelmaaliek Samaai &copy;2023</p>
          <div>
-           <a href="https://github.com/" target="_blank"><i class="fa-brands fa-github"></i></a>
-           <a href="mailto:samaaiab962@gmail.com" target="_blank"> <i class="fa-solid fa-envelope"></i></a>
-           <a href="https://www.linkedin.com/in/abdoel-samaai-b64b2a262/" target="_target"><i class="fa-brands fa-linkedin"></i></a>
+           <a href="https://github.com/" target="_blank"><img src="https://img.icons8.com/ios-filled/50/github.png" alt="link"></a>
+           <a href="mailto:samaaiab962@gmail.com" target="_blank"><img src="https://img.icons8.com/ios-filled/50/gmail.png" alt="link"></a>
+           <a href="https://www.linkedin.com/in/abdoel-samaai-b64b2a262/" target="_target"><img src="https://img.icons8.com/ios-filled/50/linkedin.png" alt="link"></a>
          </div>
      </div>
     </footer>
@@ -16,4 +16,5 @@ export default {
 }
 </script>
 <style scoped>
+
 </style>
