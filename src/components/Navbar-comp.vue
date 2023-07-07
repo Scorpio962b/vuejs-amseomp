@@ -52,6 +52,12 @@ export default {};
   justify-content: space-between;
   padding: 11px;
 }
+nav{
+  background:transparent!important;
+}
+.nav-item> router-link{
+  color:yellow!important;
+}
 .logo {
   width: 120px;
   height: 80px;
@@ -80,9 +86,9 @@ label div.links {
     display: list-item;
   }
 }
-nav {
-  background-color: rgba(255, 255, 255, 0.71) !important;
-
+li:hover{
+  background-color:black!important;
+  color:white!important;
 }
 
 </style>

@@ -25,9 +25,15 @@ export default {
   padding: 0;
   overflow-x: hidden;
 }
-
-
-
+*{
+  text-decoration:none!important;
+}
+.nav-item > router-link{
+  color:yellow!important;
+}
+nav{
+  background:transparent!important;
+}
 
 
 
